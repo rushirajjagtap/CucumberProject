@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-26T16:10:38 IST" name="Suite" finished-at="2026-02-26T16:11:08 IST" duration-ms="29022">
+    <groups>
+    </groups>
+    <test started-at="2026-02-26T16:10:38 IST" name="Test" finished-at="2026-02-26T16:11:08 IST" duration-ms="29022">
+      <class name="MavenPackage.MavenProject.TestCaseFacebook_Login">
+        <test-method signature="withValidCredentials()[pri:0, instance:MavenPackage.MavenProject.TestCaseFacebook_Login@4fb0f2b9]" started-at="2026-02-26T16:11:03 IST" name="withValidCredentials" finished-at="2026-02-26T16:11:08 IST" duration-ms="4701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCredentials -->
+      </class> <!-- MavenPackage.MavenProject.TestCaseFacebook_Login -->
+      <class name="MavenPackage.MavenProject.TestCase1_AmazonLogin">
+        <test-method is-config="true" signature="launch()[pri:0, instance:MavenPackage.MavenProject.TestCase1_AmazonLogin@5119fb47]" started-at="2026-02-26T16:10:39 IST" name="launch" finished-at="2026-02-26T16:10:51 IST" duration-ms="12752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="withValidCred()[pri:0, instance:MavenPackage.MavenProject.TestCase1_AmazonLogin@5119fb47]" started-at="2026-02-26T16:10:51 IST" name="withValidCred" finished-at="2026-02-26T16:11:01 IST" duration-ms="9285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withValidCred -->
+        <test-method is-config="true" signature="close()[pri:0, instance:MavenPackage.MavenProject.TestCase1_AmazonLogin@5119fb47]" started-at="2026-02-26T16:11:01 IST" name="close" finished-at="2026-02-26T16:11:03 IST" duration-ms="2241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- MavenPackage.MavenProject.TestCase1_AmazonLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
