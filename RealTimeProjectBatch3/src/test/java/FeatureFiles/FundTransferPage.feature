@@ -21,4 +21,4 @@ Feature: validation of Fund Transfer feature
 
     Examples: 
       | Payersaccountno | Payeesaccountno | Amount | Description |
-      |          180630 |          180631 |   100 | family      |
+      |          180799 |          180631 |   10 | family      |

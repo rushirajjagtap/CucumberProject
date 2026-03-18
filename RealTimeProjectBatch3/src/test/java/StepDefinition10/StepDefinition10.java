@@ -1,8 +1,6 @@
 package StepDefinition10;
 
-import java.util.List;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.By;
 
 import PageFactory.CustomerPage;
 import PageFactory.FundTransferPage;
@@ -13,7 +11,6 @@ import Utilities.BaseClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.en.And;
 
 public class StepDefinition10 extends BaseClass
 {
@@ -155,37 +152,29 @@ WebDriver driver=BaseClass.initializeDriver();  //we should have only one driver
 
 	
 	
+	
+	
+	
 
 	@Then("user clicks on the new account link")
 	public void user_clicks_on_the_new_account_link() {
-	    obj1.clickonNewCustomer();
+	    obj2.clickNewAcclink();
 	}
 
 	@Then("user enters the customerid as {string}")
-	public void user_enters_the_customerid_as(io.cucumber.datatable.DataTable userdata) {
-		List<List<String>> data=userdata.asLists(String.class);
-		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Tam");
-		driver.findElement(By.xpath("//input[@value='f']")).click();
-		driver.findElement(By.xpath("//input[@name='dob']")).sendKeys("06-08-1992");
-		driver.findElement(By.xpath("//textarea[@name='addr']")).sendKeys("Satara");
-		driver.findElement(By.xpath("//input[@name='city']")).sendKeys("Karad");
-		driver.findElement(By.xpath("//input[@name='state']")).sendKeys("Maharashtra");
-		driver.findElement(By.xpath("//input[@name='pinno']")).sendKeys("560037");
-		driver.findElement(By.xpath("//input[@name='telephoneno']")).sendKeys("6302765485");
-		driver.findElement(By.xpath("//input[@name='emailid']")).sendKeys("xyz123859@gmail.com");
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Test@1234");
-		driver.findElement(By.xpath("//input[@name='sub']")).click();
+	public void user_enters_the_customerid_as(String cID) {
+		obj2.enterCustomerid(cID);
 	   
 	}
 
 	@Then("user enters the AccountType as {string}")
-	public void user_enters_the_account_type_as(String AccountType) {
-		obj2.enterAccountType(AccountType);
+	public void user_enters_the_account_type_as(String savings) {
+		obj2.enterAccountType(savings);
 	}
 
 	@Then("user enters the initial deposit as {string}")
-	public void user_enters_the_initial_deposit_as(String customerid) {
-		obj2.enterCustomerid(customerid);
+	public void user_enters_the_initial_deposit_as(String initialdeposite) {
+		obj2.enterInitialDeposit(initialdeposite);
 	}
 
 	@Then("user clicks on submit button")
@@ -195,7 +184,16 @@ WebDriver driver=BaseClass.initializeDriver();  //we should have only one driver
 
 	@Then("validate user will be navigated to getting created account details")
 	public void validate_user_will_be_navigated_to_getting_created_account_details() {
-		obj2.validateAccountGeneration();
+		String newAccountPageTitle = getTitle();
+		System.out.println(newAccountPageTitle);
+		
+		if(newAccountPageTitle.contains("AccCreateMsg")) {
+			
+			System.out.println("A new account is created");
+		}
+		else {
+			throw new NullPointerException("No account created");
+		}
 	}
 
 	

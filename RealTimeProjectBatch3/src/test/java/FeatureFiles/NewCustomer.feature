@@ -28,4 +28,4 @@ Feature: Creation of New Customer for Guru99 Demo App
 
     Examples: 
       | customerName | doB        | address     | city      | state     | pin    | mobileNumber | password  |
-      | wam         | 06-08-1992 | Satara | Karad | Maharashtra | 560037 |   6302765485 | Test@1234 |
+      | aaaa         | 06-08-1992 | Satara | Karad | Maharashtra | 560037 |   6302765485 | Test@1234 |
