@@ -147,6 +147,7 @@ WebDriver driver=BaseClass.initializeDriver();  //we should have only one driver
 	public void user_captures_the_customer_id() 
 	{
 		String customerID=obj1.getCustomerID();
+		System.out.println("The customer ID generated");
 		System.out.println("The customer ID generated is "+customerID);
 	}
 
