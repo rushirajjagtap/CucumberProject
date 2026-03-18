@@ -188,7 +188,7 @@ WebDriver driver=BaseClass.initializeDriver();  //we should have only one driver
 		String newAccountPageTitle = getTitle();
 		System.out.println(newAccountPageTitle);
 		
-		if(newAccountPageTitle.contains("AccCreateMsg")) {
+		if(newAccountPageTitle.contains("Created Account details")) {
 			
 			System.out.println("A new account is created");
 		}
