@@ -22,6 +22,7 @@ plugin= {
 		"html:target/HTMLReports/index.html", 
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 	    "html:target/cucumber-report.html",
+	    "json:target/cucumber.json"
 	
 		}
 
