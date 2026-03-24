@@ -32,7 +32,7 @@ plugin= {
 
 
 
-public class TestRunnerTest
+public class TestRunner
 	{
 
 }
