@@ -18,4 +18,4 @@ Feature: Creation of new account
 
     Examples: 
       | customerid | AccountType | initialdeposit |
-      |     	34790 | savings     |           95000 |
+      |     	31429 | savings     |           95000 |
