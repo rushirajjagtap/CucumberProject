@@ -10,4 +10,4 @@ Feature: Login Functionalty check
 
     Examples: 
       | username   | password |
-      | mngr656459 | EgeqavY  |
+      | mngr658797 | tytEvUj  |
